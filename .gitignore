@@ -1,0 +1,10 @@
+# Dev tools
+.idea
+.vscode
+
+# Local environment
+venv
+**/__pycache__
+
+# Temporary storage
+.cache
