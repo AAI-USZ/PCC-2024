@@ -1,8 +1,8 @@
 import os
 from patch_util import read_patches
 
-in_path = "./data/patches_for_static/"
-out_path = "./out"
+in_path = "../data/patches_for_static/"
+out_path = "../data"
 
 for patch in read_patches(in_path):
     if not os.path.exists(f"{out_path}/{patch.project}/{patch.name}"):

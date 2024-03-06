@@ -1,18 +1,18 @@
 
 ASE_features = []
-with open(f"./data/merged_ASE_metrics.csv") as csv_file:
+with open(f"../data/merged_static_features.csv") as csv_file:
     ASE_features = csv_file.readlines()
 
 sim_features = []
-with open(f"./data/sims.csv") as csv_file:
+with open(f"../data/sim_features.csv") as csv_file:
     sim_features = csv_file.readlines()
 
 ODS_features = []
-with open(f"./data/ODS_features.csv") as csv_file:
+with open(f"../data/ODS_features.csv") as csv_file:
     ODS_features = csv_file.readlines()
 
 n = 0
-with open(f"./data/ALL_features.csv", "w") as csv_file:
+with open(f"../data/ALL_features.csv", "w") as csv_file:
     csv_file.write(f"{ASE_features[0][:-1]},{sim_features[0][:-2]},{ODS_features[0]}")
     for ASE_line in ASE_features[1:]:
         columns = ASE_line.split(",")

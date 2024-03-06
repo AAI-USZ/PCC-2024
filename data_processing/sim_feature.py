@@ -15,8 +15,8 @@ def splitter(s):
     return tokens
 
 
-in_path = "./data/patches_for_static/"
-out_path = "./data"
+in_path = "../data/patches_for_static/"
+out_path = "../data"
 
 patches = read_patches(in_path)
 train_sentences = ["".join(p.source).replace("\n", " ") for p in patches]
